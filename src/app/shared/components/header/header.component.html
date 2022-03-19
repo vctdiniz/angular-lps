@@ -1,7 +1,8 @@
-<div class="row shadow p-3 mb-5 bg-body rounded">
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
+<div class="row shadow p-3 mb-2 bg-body rounded top-0"
+    [ngClass]="{'position-sticky': fixedOnTop, 'position-relative': !fixedOnTop}">
+    <header class="d-flex flex-wrap justify-content-center py-3">
         <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-            <app-icon [iconName]="'bi-bullseye'" [fontSize]="'2rem'" ></app-icon>
+            <app-icon [iconName]="brandIconName" [fontSize]="'2rem'"></app-icon>
             <span class="fs-4">Simple Header</span>
         </a>
         <ul class="nav nav-pills align-items-center">
@@ -11,4 +12,20 @@
             <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
         </ul>
     </header>
+</div>
+<div class="">
+    <div class="p-3 mb-2 bg-primary bg-gradient text-white">.bg-primary</div>
+    <div class="p-3 mb-2 bg-secondary bg-gradient text-white">.bg-secondary</div>
+    <div class="p-3 mb-2 bg-success bg-gradient text-white">.bg-success</div>
+    <div class="p-3 mb-2 bg-danger bg-gradient text-white">.bg-danger</div>
+    <div class="p-3 mb-2 bg-warning bg-gradient text-dark">.bg-warning</div>
+    <div class="p-3 mb-2 bg-info bg-gradient text-dark">.bg-info</div>
+    <div class="p-3 mb-2 bg-light bg-gradient text-dark">.bg-light</div>
+    <div class="p-3 mb-2 bg-dark bg-gradient text-white">.bg-dark</div>
+    <div class="p-3 mb-2 bg-body bg-gradient text-dark">.bg-body</div>
+    <div class="p-3 mb-2 bg-white bg-gradient text-dark">.bg-white</div>
+    <div class="p-3 mb-2 bg-transparent bg-gradient text-dark">.bg-transparent</div>
+    <div>
+        <h1>teste</h1>
+    </div>
 </div>
