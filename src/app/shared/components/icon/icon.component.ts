@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class IconComponent implements OnInit {
   @Input() iconName: string = 'bi-bootstrap';
-  @Input() fontSize: string = '1rem';
+  @Input() fontSize: string = '1.5rem';
 
   constructor() { }
 

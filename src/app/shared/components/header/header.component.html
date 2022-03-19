@@ -2,7 +2,7 @@
     [ngClass]="{'position-sticky': fixedOnTop, 'position-relative': !fixedOnTop}">
     <header class="d-flex flex-wrap justify-content-center py-3">
         <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-            <app-icon [iconName]="brandIconName" [fontSize]="'2rem'"></app-icon>
+            <ng-content select="[brandLogo]"></ng-content>
             <span class="fs-4">Simple Header</span>
         </a>
         <ul class="nav nav-pills align-items-center">
@@ -25,7 +25,4 @@
     <div class="p-3 mb-2 bg-body bg-gradient text-dark">.bg-body</div>
     <div class="p-3 mb-2 bg-white bg-gradient text-dark">.bg-white</div>
     <div class="p-3 mb-2 bg-transparent bg-gradient text-dark">.bg-transparent</div>
-    <div>
-        <h1>teste</h1>
-    </div>
 </div>
